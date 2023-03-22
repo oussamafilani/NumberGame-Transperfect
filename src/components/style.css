@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 4em;
+  padding: 0.4em;
+  color: #bf195d;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 3px 4px rgb(52, 3, 45);
+}
+
+header h2 {
+  padding: 0.5em 0.8em 1em 0.8em;
+  font-size: 2em;
+  display: block;
+  line-height: 1em;
+  color: #bf195d;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+}
+
+p {
+  padding: 49px;
+  font-size: 1.5em;
+  line-height: 37px;
+  font-weight: 100;
+}
+
+hr {
+  height: 1px;
+}
+
+.game {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #010100;
+  padding: 1.5em;
+  margin: 0 auto;
+  text-align: center;
+}
+.winning-bg {
+  background-image: url("public/confetti.gif");
+}
+
+.game p {
+  margin-top: 0.5em;
+  font-size: 1.8em;
+  padding-bottom: 0.5em;
+}
+
+input {
+  width: 300px;
+  height: 50px;
+  display: block;
+  padding: 0.8em 0;
+  margin: 0.8em auto 0;
+  background: #50597b;
+  color: #fff;
+  border: solid 1px #1f253d;
+  border-radius: 4px;
+}
+.btn {
+  width: 300px;
+  height: 50px;
+  display: block;
+  padding: 0.8em 0;
+  margin: 0.8em auto 0;
+  background: #1f253d;
+  font-family: inherit;
+  color: #fff;
+  border: solid 1px #1f253d;
+  font-size: 2em;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #e64c65;
+  color: #fff;
+  transition: background 1s ease-in-out;
+  cursor: pointer;
+}
+
+input.text {
+  height: 95px;
+  text-align: center;
+  padding: 0.2em;
+  font-size: 2em;
+  font-family: inherit;
+  border: solid 1px #141315;
+  background: #9ba6b7;
+  color: rgb(239, 42, 95);
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  header h2 {
+    font-size: 1em;
+    line-height: 1.3em;
+    letter-spacing: 3px;
+  }
+  p {
+    padding: 18px;
+    font-size: 1em;
+    line-height: 25px;
+    font-weight: 100;
+  }
+}
