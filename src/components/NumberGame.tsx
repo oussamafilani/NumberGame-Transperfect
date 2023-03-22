@@ -10,7 +10,7 @@ export default function NumberGame() {
   const [randomNumber, setRandomNumber] = useState<number>(randNumber);
   const ref = useRef<HTMLDivElement>(null);
 
-  console.log(randomNumber);
+  console.log("random Number : ", randomNumber);
 
   const submitHandler: FormEventHandler = (e) => {
     e.preventDefault();
