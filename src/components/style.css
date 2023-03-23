@@ -44,6 +44,8 @@ hr {
   padding: 1.5em;
   margin: 0 auto;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
 .winning-bg {
   background-image: url("https://user-images.githubusercontent.com/42185573/226814087-c245e882-9d59-4ac1-92f1-791f5dcbac73.gif");
@@ -52,7 +54,6 @@ hr {
 .game p {
   margin-top: 0.5em;
   font-size: 1.8em;
-  padding-bottom: 0.5em;
 }
 
 input {
