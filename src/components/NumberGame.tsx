@@ -7,14 +7,16 @@ const randNumber = () => Math.floor(Math.random() * 100) + 1;
 export default function NumberGame() {
   const [userGuess, setUserGuess] = useState(0);
   const [message, setMessage] = useState("Start guessing...");
+  const [isDisabled, setDisabled] = useState(false);
   const [randomNumber, setRandomNumber] = useState<number>(randNumber);
   const ref = useRef<HTMLDivElement>(null);
 
-  console.log("random Number : ", randomNumber);
+  console.log("Correct Number : ", randomNumber);
 
   const submitHandler: FormEventHandler = (e) => {
     e.preventDefault();
     if (randomNumber === userGuess) {
+      setDisabled(true);
       ref.current?.classList.add("winning-bg");
       setMessage("You win!");
     } else if (randomNumber < userGuess) {
@@ -25,6 +27,7 @@ export default function NumberGame() {
   };
 
   const restartAgain = () => {
+    setDisabled(false);
     setRandomNumber(randNumber);
     setMessage("Start guessing...");
     setUserGuess(0);
@@ -46,6 +49,7 @@ export default function NumberGame() {
             name="userGuess"
             className="text"
             maxLength={3}
+            disabled={isDisabled}
             min={0}
             max={100}
             placeholder="Enter"
